@@ -95,9 +95,11 @@ fun RegisterScreen(
         )
         Spacer(modifier = Modifier.height(24.dp))
 
-        Row (modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)){
-            Text(modifier = Modifier.weight(1f),text = "whatsApp will need to verify your phone number.")
-            Text(text = "What's my phone?", color = colorResource(id = R.color.dark_green))
+        Row (verticalAlignment = Alignment.CenterVertically){
+            Column {
+                Text(text = "whatsApp will need to verify your phone number.")
+                Text(text = "What's my phone?", color = colorResource(id = R.color.dark_green), modifier = Modifier.padding(start = 110.dp))
+            }
         }
 
 
